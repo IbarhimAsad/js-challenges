@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Challenge 29</title>
+</head>
+
+<body>
+  <h1>Challenge 29</h1>
+  <pre id="output"></pre>
+
+  <script src="main.js"></script>
+  <script>
+    function show(x) {
+      document.getElementById("output").textContent +=
+        (typeof x === "object" ? JSON.stringify(x) : x) + "\\n";
+    }
+
+    show(applyDiscount(200, 50));
+
+  </script>
+</body>
+
+</html>

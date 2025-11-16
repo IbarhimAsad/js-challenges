@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Challenge 28</title>
+</head>
+
+<body>
+  <h1>Challenge 28</h1>
+  <pre id="output"></pre>
+
+  <script src="main.js"></script>
+  <script>
+    function show(x) {
+      document.getElementById("output").textContent +=
+        (typeof x === "object" ? JSON.stringify(x) : x) + "\\n";
+    }
+
+    show(safeDivide(10, 0));
+
+  </script>
+</body>
+
+</html>
